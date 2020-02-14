@@ -14,17 +14,19 @@
 \maketitle
 
 \begin{frame}[fragile]{The hello world program}
-
 	\begin{minted}{python}
 		print("hello world")
 	\end{minted}
-
 	\pause
-
 	\begin{center}
 		\includegraphics[width=.3\textwidth]{./img/images.jpg}
 	\end{center}
+\end{frame}
 
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{./img/main-qimg-e7eaa6e92e42b3df3a851a961fdf7540.jpg}
+	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]{Running the code}
@@ -45,17 +47,55 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}[fragile]{Indentation is important}
+\begin{frame}{Variable naming conventions and rules}
+	You must assign a value to a variable before you can use it, 
+	even if that value is zero or empty.
+	\\
+	\\
+	{\Large Rules:}
+	\begin{itemize}
+		\item Variable names must start with a letter or an underscore (\_)
+		\item The reminder of your variable name may consist of letters
+			numbers and underscores
+		\item The names are case sensitive
+	\end{itemize}
+\end{frame}
 
+\begin{frame}{Data types}
+	\begin{itemize}
+		\item int
+		\item float
+		\item list
+		\item tuple
+		\item strings
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{If Else}
+	\begin{minted}{python}
+		if x<0:
+	 	  print("Negative")
+		elif x==0:
+		  print("Zero")
+		else:
+		  print("Positive")
+	\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]{Indentation is important}
 \begin{minted}{python}
 	if foo:
-	  if abc(x):
-	    print(x)
+	    if abc(x):
+	      print(x)
 	else:
-	  print(y)
+	    print(y)
 \end{minted}
+\end{frame}
 
-
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{./img/neo.jpg}
+	\end{center}
 \end{frame}
 
 \end{document}
