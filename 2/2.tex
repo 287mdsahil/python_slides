@@ -45,4 +45,106 @@
 	\end{minted}
 \end{frame}
 
+\begin{frame}[fragile]{Taking input}
+	\begin{minted}{python}
+	age = input("Enter your age:")
+	\end{minted}
+	If the input function is called, the program flow will be stopped until the user has given an input and has ended the input with the return key. The text of the optional parameter, i.e.\ the prompt, will be printed on the screen.
+	
+	The input of the user will be returned as a string without any changes. If this raw input has to be transformed into another data type needed by the algorithm, we can use casting 
+\end{frame}
+
+\begin{frame}{Casting}
+	\begin{center}
+	\begin{table}
+		\begin{tabular}{|l|p{8cm}|}
+		\hline
+		int(x) & Converts x to an integer \\
+		\hline
+		long(x) & Converts x to a long integer \\
+		\hline
+		float(x) & Converts x to a floating point number \\
+		\hline
+		str(x) & Converts x to an string. x can be of the type float. integer or long. \\
+		\hline
+		hex(x) & Converts x integer to a hexadecimal string \\
+		\hline
+		chr(x) & Converts x integer to a character \\
+		\hline
+		ord(x) & Converts character x to an integer \\
+		\hline
+	\end{tabular}
+	\end{table}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{A bit of maths}
+	\begin{minted}{python}
+import math
+	\end{minted}
+	
+	\begin{center}
+	\begin{table}
+	\begin{tabular}{|l|p{7cm}|}
+		\hline
+		math.fabs(x) &
+		Return the absolute value of x. \\
+		\hline
+		math.gcd(a, b) &
+		Return the greatest common divisor of the integers a and b. \\
+		\hline
+		math.exp(x) &
+		Return e raised to the power x, where e = 2.718281… is the base of natural logarithm. \\
+		\hline
+		maqrt(x) & 
+		Return the square root of x. \\
+		\hline
+	\end{tabular}
+	\end{table}
+	\end{center}
+	For more function visit : 
+	https://docs.python.org/3.8/library/math.html
+\end{frame}
+
+\begin{frame}{Python Lists}
+	Lists are mutable sequences, typically used to store collections of homogeneous items (where the precise degree of similarity will vary by application).
+\end{frame}
+
+\begin{frame}[fragile]{Python Lists contd.}
+	\begin{minted}{python}
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+	
+print(thislist[1])
+print(thislist[-1])
+
+thislist = ["a", "ball", "c", "do", "go", "dum", "m"]
+print(thislist[2:5])
+print(thislist[:4])
+print(thislist[2:])
+print(thislist[-4:-1])
+
+thislist[1] = "blackcurrant"
+print(thislist)
+	\end{minted}
+\end{frame}
+
+
+\begin{frame}{Sequence Types}
+	There are three basic sequence types: lists, tuples, and range objects. 
+
+	You can check them out at: https://docs.python.org/3/library/stdtypes.html
+\end{frame}
+
+\begin{frame}[fragile]{in and not in}
+	\begin{minted}{python}
+l = [1,4,3,7]
+x = 1
+if x in l:
+  print("x is in")
+else:
+  print("x not in")
+	\end{minted}
+\end{frame}
+
 \end{document}
